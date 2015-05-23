@@ -20,7 +20,7 @@
 
 class Hello : public NovaProgram, public ProgramConsole
 {
-
+public:
 static __inline__ unsigned long long RDTSC(void)
 {
     unsigned hi, lo;
