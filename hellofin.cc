@@ -53,7 +53,7 @@ public:
 		rdtsc_old=rdtsc_new;
 		}
 		long i_max = i; long RDTSC_min,RDTSC_now;
-		RDTSC_min=(-1)*(RDTSC()-RDTSC()); 
+		RDTSC_min=RDTSC()-RDTSC(); 
 		RDTSC_min=(-1)* RDTSC_min;
 		for(i=1; i<i_max; i++) 
 			Logging::printf("mas[%ld]= %lld \t\tmas_tsc[%ld]= %lld\n", i, mas[i], i, mas_tsc[i]);
